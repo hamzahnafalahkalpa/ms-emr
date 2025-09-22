@@ -1,0 +1,37 @@
+{
+    "name": "wellmed/ms-emr",
+    "autoload": {
+        "psr-4": {
+            "Wellmed\\MsEmr\\": "src/"
+        },
+        "files":[
+            "src/helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Hamzah Nur Alfalah",
+            "email": "hamzahnafalah@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wellmed\\MsEmr\\Providers\\MsApotekServiceProvider"
+            ]
+        }
+    },
+    "require": {
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": {
+        "hanafalah/module-support": {
+            "type": "path",
+            "url": "../../repositories/module-support",
+            "options": {
+                "symlink": true
+            }
+        }
+    }
+}
