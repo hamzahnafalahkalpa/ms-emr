@@ -1,12 +1,9 @@
 {
-    "name": "wellmed/ms-emr",
+    "name": "wellmed-lite/ms-emr",
     "autoload": {
         "psr-4": {
-            "Wellmed\\MsEmr\\": "src/"
-        },
-        "files":[
-            "src/helper.php"
-        ]
+            "WellmedLite\\MsEmr\\": "src/"
+        }
     },
     "authors": [
         {
@@ -17,15 +14,301 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Wellmed\\MsEmr\\Providers\\MsApotekServiceProvider"
+                "WellmedLite\\MsEmr\\MsEmrServiceProvider"
             ]
         }
     },
     "require": {
+        "hanafalah/module-patient": "dev-main",
+        "hanafalah/module-people": "dev-main",
+        "hanafalah/module-profession": "dev-main",
+        "hanafalah/module-examination": "dev-main",
+        "hanafalah/module-physical-examination": "dev-main",
+        "hanafalah/module-anatomy": "dev-main",
+        "hanafalah/module-disease": "dev-main",
+        "hanafalah/module-medic-service": "dev-main",
+        "hanafalah/module-medical-treatment": "dev-main",
+        "hanafalah/module-icd": "dev-main",
+        "hanafalah/module-summary": "dev-main",
+        "hanafalah/module-treatment": "dev-main",
+        "hanafalah/module-informed-consent": "dev-main",
+        "hanafalah/module-pharmacy": "dev-main",
+        "hanafalah/module-support": "dev-main",
+        "hanafalah/module-handwriting": "dev-main"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": {
+        "hanafalah/module-patient": {
+            "type": "path",
+            "url": "../../repositories/module-patient",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-people": {
+            "type": "path",
+            "url": "../../repositories/module-people",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-profession": {
+            "type": "path",
+            "url": "../../repositories/module-profession",
+            "options": {
+                "symlink": true
+            }
+        },
+
+        "hanafalah/module-organization": {
+            "type": "path",
+            "url": "../../repositories/module-organization",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/api-helper": {
+            "type": "path",
+            "url": "../../repositories/api-helper",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/laravel-feature": {
+            "type": "path",
+            "url": "../../repositories/laravel-feature",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/laravel-has-props": {
+            "type": "path",
+            "url": "../../repositories/laravel-has-props",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/laravel-package-generator": {
+            "type": "path",
+            "url": "../../repositories/laravel-package-generator",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/laravel-permission": {
+            "type": "path",
+            "url": "../../repositories/laravel-permission",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/laravel-stub": {
+            "type": "path",
+            "url": "../../repositories/laravel-stub",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/laravel-support": {
+            "type": "path",
+            "url": "../../repositories/laravel-support",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/microtenant": {
+            "type": "path",
+            "url": "../../repositories/microtenant",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-encoding": {
+            "type": "path",
+            "url": "../../repositories/module-encoding",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-regional": {
+            "type": "path",
+            "url": "../../repositories/module-regional",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-user": {
+            "type": "path",
+            "url": "../../repositories/module-user",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-workspace": {
+            "type": "path",
+            "url": "../../repositories/module-workspace",
+            "options": {
+                "symlink": true
+            }
+        },
+
+        "hanafalah/module-employee": {
+            "type": "path",
+            "url": "../../repositories/module-employee",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-lab-radiology": {
+            "type": "path",
+            "url": "../../repositories/module-lab-radiology",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-medic-service": {
+            "type": "path",
+            "url": "../../repositories/module-medic-service",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-medical-treatment": {
+            "type": "path",
+            "url": "../../repositories/module-medical-treatment",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-payment": {
+            "type": "path",
+            "url": "../../repositories/module-payment",
+            "options": {
+                "symlink": true
+            }
+        },
+
+
+        "hanafalah/module-service": {
+            "type": "path",
+            "url": "../../repositories/module-service",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-summary": {
+            "type": "path",
+            "url": "../../repositories/module-summary",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-transaction": {
+            "type": "path",
+            "url": "../../repositories/module-transaction",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-treatment": {
+            "type": "path",
+            "url": "../../repositories/module-treatment",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-warehouse": {
+            "type": "path",
+            "url": "../../repositories/module-warehouse",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-card-identity": {
+            "type": "path",
+            "url": "../../repositories/module-card-identity",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-item": {
+            "type": "path",
+            "url": "../../repositories/module-item",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-medical-item": {
+            "type": "path",
+            "url": "../../repositories/module-medical-item",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-examination": {
+            "type": "path",
+            "url": "../../repositories/module-examination",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-disease": {
+            "type": "path",
+            "url": "../../repositories/module-disease",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-informed-consent": {
+            "type": "path",
+            "url": "../../repositories/module-informed-consent",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-icd": {
+            "type": "path",
+            "url": "../../repositories/module-icd",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-anatomy": {
+            "type": "path",
+            "url": "../../repositories/module-anatomy",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-physical-examination": {
+            "type": "path",
+            "url": "../../repositories/module-physical-examination",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-pharmacy": {
+            "type": "path",
+            "url": "../../repositories/module-pharmacy",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-tax": {
+            "type": "path",
+            "url": "../../repositories/module-tax",
+            "options": {
+                "symlink": true
+            }
+        },
+        "hanafalah/module-handwriting": {
+            "type": "path",
+            "url": "../../repositories/module-handwriting",
+            "options": {
+                "symlink": true
+            }
+        },
         "hanafalah/module-support": {
             "type": "path",
             "url": "../../repositories/module-support",
