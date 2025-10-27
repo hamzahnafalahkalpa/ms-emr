@@ -11,13 +11,6 @@
             "email": "hamzahnafalah@gmail.com"
         }
     ],
-    "extra": {
-        "laravel": {
-            "providers": [
-                "WellmedLite\\MsEmr\\MsEmrServiceProvider"
-            ]
-        }
-    },
     "require": {
         "hanafalah/module-patient": "dev-main",
         "hanafalah/module-people": "dev-main",
