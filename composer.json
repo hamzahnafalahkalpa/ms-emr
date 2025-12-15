@@ -24,7 +24,6 @@
         "hanafalah/module-icd": "dev-main",
         "hanafalah/module-summary": "dev-main",
         "hanafalah/module-treatment": "dev-main",
-        "hanafalah/module-informed-consent": "dev-main",
         "hanafalah/module-pharmacy": "dev-main",
         "hanafalah/module-support": "dev-main",
         "hanafalah/module-handwriting": "dev-main"
@@ -249,13 +248,6 @@
         "hanafalah/module-disease": {
             "type": "path",
             "url": "../../repositories/module-disease",
-            "options": {
-                "symlink": true
-            }
-        },
-        "hanafalah/module-informed-consent": {
-            "type": "path",
-            "url": "../../repositories/module-informed-consent",
             "options": {
                 "symlink": true
             }
